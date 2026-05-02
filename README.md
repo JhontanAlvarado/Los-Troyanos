@@ -1,13 +1,21 @@
-# Plantilla: Sistema de Gestión Clínica (Django)
-# Clínica Django
+#  TROYANOS
 
-Proyecto web desarrollado con Django para la gestión de una clínica médica.
+<p align="center">
+  <img src="images/logo.png" width="200">
+</p>
 
-## Integrantes
+## Integrantes:
+
+
 - Dana Sainz Rubin de Celis
 - Andree Villca Torrico
 - Jhosselin Sthaicy Bustamante Escobar
 - Jhonatan Alvarado Mamani
+
+##  Plantilla: Sistema de Gestión Clínica (Django)
+##  Clínica Django
+
+Proyecto web desarrollado con Django para la gestión de una clínica médica.
 
 ## Requisitos
 - Python 3.12
@@ -17,6 +25,51 @@ Proyecto web desarrollado con Django para la gestión de una clínica médica.
 1. Activar entorno virtual: source env/bin/activate
 2. Instalar dependencias: pip install -r requirements.txt
 3. Ejecutar servidor: python manage.py runserver
+5. Credenciales por defecto:
+Para acceder al panel de administración:
+- Usuario: `adminClinica`
+- Contraseña: `adminClinica`
+
+> Si necesitas cambiar la contraseña ejecuta:
+> python manage.py changepassword adminClinica
+4. Registrar  password:
+```
+cd ~/Documentos/clinicaDjango
+python manage.py changepassword adminClinica
+```
+![http](images/password.jpg)
+
+## Ejecución:
+1. Una vez haya corrido el programa con este comando:
+```
+source ~/env/bin/activate
+cd ~/Documentos/clinicaDjango
+python manage.py runserver
+```
+tiene la posibilidad de entrar con el url subrayado en la terminal:
+http://127.0.0.1:8000/
+
+![http](images/http.jpg)
+
+2. El http lo rediccionará a una pagina donde le dará la opcion de añadir a 
+ese http los sufijos (appClinicaDjango/) y (admin/).
+
+![page](images/page.jpg) 
+
+3. En este contexto usted puede elegir
+visitar la pagina donde se muestran los datos registrados por el admin.
+
+![lista](images/lista.jpeg)
+
+4. Si elige el "admin/"deberá logearse con el usuario y password que haya registrado antes podrá ver la interfás del administrador donde usted es capas
+añadir datos (doctores,habilidades,especialidades,pacientes y vincularlos a los doctores)
+
+![loging](images/log.jpeg)
+
+![http://127.0.0.1:8000/admin/](images/admin.jpeg)
+
+![añadir](images/add.jpeg)
+
 ## Lógica del Negocio
 Este sistema está diseñado para gestionar el flujo básico de una clínica médica o consultorio independiente. Contempla el registro de **Pacientes**, la gestión de **Doctores** (con sus respectivas especialidades/habilidades) y el control interno de operaciones. 
 
