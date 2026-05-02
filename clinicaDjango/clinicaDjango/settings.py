@@ -9,13 +9,13 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
-    'appClinicaDjango',
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'appClinicaDjango', #app principal
+    'django.contrib.admin', #panel de administracion
+    'django.contrib.auth', #autenticacion
+    'django.contrib.contenttypes', #tipos de contenido
+    'django.contrib.sessions', #sesiones
+    'django.contrib.messages', #mensajes
+    'django.contrib.staticfiles', #archivos staticos
 ]
 
 MIDDLEWARE = [
@@ -63,3 +63,5 @@ STATIC_URL = 'static/'
 
 import os
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+# Default primary key field type
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
