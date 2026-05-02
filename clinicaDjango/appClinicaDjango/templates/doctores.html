@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block titulo %}Doctores de {{ especialidad.nombre }}{% endblock %}
+{% block contenido %}
+<h1>Doctores: {{ especialidad.nombre }}</h1>
+<ul>
+    {% for doctor in doctores %}
+        <li><a href="{% url 'appClinicaDjango:show_doctor' doctor.id %}">{{ doctor.nombre }}</a></li>
+    {% empty %}
+        <li>No hay doctores asignados a esta especialidad.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

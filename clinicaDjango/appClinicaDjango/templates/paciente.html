@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block titulo %}Paciente: {{ paciente.nombre }}{% endblock %}
+{% block contenido %}
+<h1>Paciente: {{ paciente.nombre }}</h1>
+<p><strong>Fecha de Nacimiento:</strong> {{ paciente.fecha_nacimiento }}</p>
+<h2>Doctores Asignados</h2>
+<ul>
+    {% for doc in paciente.doctores.all %}
+        <li><a href="{% url 'appClinicaDjango:show_doctor' doc.id %}">{{ doc.nombre }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}
