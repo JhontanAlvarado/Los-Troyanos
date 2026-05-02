@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block titulo %}Doctor: {{ doctor.nombre }}{% endblock %}
+{% block contenido %}
+<h1>Dr. {{ doctor.nombre }}</h1>
+<p><strong>Antigüedad:</strong> {{ doctor.antiguedad }} años</p>
+
+<h2>Habilidades</h2>
+<ul>
+    {% for hab in doctor.habilidades.all %}
+        <li><a href="{% url 'appClinicaDjango:show_habilidad' hab.id %}">{{ hab.nombre }}</a></li>
+    {% endfor %}
+</ul>
+
+<h2>Pacientes</h2>
+<ul>
+    {% for pac in doctor.pacientes.all %}
+        <li><a href="{% url 'appClinicaDjango:show_paciente' pac.id %}">{{ pac.nombre }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}
