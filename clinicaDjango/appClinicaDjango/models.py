@@ -19,3 +19,14 @@ class Paciente(models.Model):
 
     def __str__(self):
         return self.nombre
+
+class Doctor(models.Model):
+    especialidad = models.ForeignKey(Especialidad, on_delete=models.CASCADE)
+    habilidades = models.ManyToManyField(Habilidad)
+    pacientes = models.ManyToManyField(Paciente, blank=True)
+    nombre = models.CharField(max_length=40)
+    fecha_nacimiento = models.DateField()
+    antiguedad = models.IntegerField(default=0)
+
+    def __str__(self):
+        return self.nombre
