@@ -45,3 +45,15 @@ class Doctor(ModeloBase):
 
     def __str__(self):
         return self.nombre
+
+# 5. Modelo Cita
+class Cita(ModeloBase):
+    paciente = models.ForeignKey('Paciente', on_delete=models.CASCADE, related_name="citas")
+    doctor = models.ForeignKey('Doctor', on_delete=models.CASCADE, related_name="citas")
+    fecha = models.DateTimeField()
+
+    def __str__(self):
+        return f"{self.paciente} - {self.doctor} - {self.fecha}"
+
+    class Meta:
+        unique_together = ('doctor', 'fecha')

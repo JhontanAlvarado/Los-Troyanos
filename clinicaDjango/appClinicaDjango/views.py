@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Especialidad, Doctor, Habilidad, Paciente
+from .models import Especialidad, Doctor, Habilidad, Paciente, Cita
+from .forms import CitaForm
 
 def index_especialidades(request):
     especialidades = Especialidad.objects.all().order_by('nombre')
@@ -31,3 +32,14 @@ def show_paciente(request, id):
     paciente = get_object_or_404(Paciente, pk=id)
     context = {'paciente': paciente}
     return render(request, 'paciente.html', context)
+
+def crear_cita(request):
+    if request.method == 'POST':
+        form = CitaForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('index')  
+    else:
+        form = CitaForm()
+
+    return render(request, 'crear_cita.html', {'form': form})
