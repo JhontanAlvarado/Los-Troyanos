@@ -8,9 +8,25 @@
 
 
 - Dana Sainz Rubin de Celis
+
+  Cel: 74325363
+  
+  Gmail: paraactividadescurriculates.777@gmail.com
+<img src="images/Dana.jpeg" width="200">
+
 - Andree Villca Torrico
 - Jhosselin Sthaicy Bustamante Escobar
+
+   Cel: 70775686
+
+   Gmail: sthaicy08@gmail.com
+   
 - Jhonatan Alvarado Mamani
+
+  Cel: 78304064
+  
+  Gmail: alvaj802@gmail.com
+<img src="images/Jhonatan.jpeg" width="200">
 
 ##  Plantilla: Sistema de Gestión Clínica (Django)
 ##  Clínica Django
