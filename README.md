@@ -26,7 +26,8 @@
    Cel: 70775686
 
    Gmail: sthaicy08@gmail.com
-   <img src="images/imageSthaicy.png" width="200">
+  
+<img src="images/imageSthaicy.png" width="200">
 
 - Jhonatan Alvarado Mamani
 
