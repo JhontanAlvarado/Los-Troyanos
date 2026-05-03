@@ -14,7 +14,12 @@
   Gmail: paraactividadescurriculates.777@gmail.com
 <img src="images/Dana.jpeg" width="200">
 
-- Andree Villca Torrico
+- Andre Fernando Villca Torrico
+
+  Cel: 78267040
+  
+  Gmail: 202401363@est.umss.edu
+<img src="images/image.png" width="200">
 
 - Jhosselin Sthaicy Bustamante Escobar
 
@@ -64,7 +69,7 @@ cd ~/Documentos/clinicaDjango
 python manage.py runserver
 ```
 tiene la posibilidad de entrar con el url subrayado en la terminal:
-http://127.0.0.1:8000/
+http://127.0.0.1:8000/. Una vez dentro tiene las opciones de ir a /admin/ o /appClinicaDjango/
 
 ![http](images/http.jpg)
 
@@ -92,3 +97,16 @@ Este sistema está diseñado para gestionar el flujo básico de una clínica mé
 
 ## Arquitectura
 El proyecto adopta un enfoque **"Local-First"**. Está optimizado para ejecutarse en servidores locales (ej. una computadora estándar en la recepción de la clínica) utilizando **SQLite**. Esta decisión arquitectónica permite a las pequeñas y medianas empresas tener un sistema de gestión de inventario, ventas o pacientes rápido y privado, eliminando los costos recurrentes de bases de datos o *hosting* en la nube.
+
+## Notas
+En caso de no funcionar por error de migración o credenciales, dado que no subimos la DB entera, por motivos de seguridad. Usar los siguientes comandos en shell/bash:
+
+```bash
+# Para la migración de DB
+python manage.py migrate
+python manage.py runserver
+
+# Para nuevas credenciales
+python manage.py createsuperuser
+python manage.py runserver
+```
