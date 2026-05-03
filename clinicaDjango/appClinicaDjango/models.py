@@ -1,6 +1,6 @@
 from django.db import models
 
-# 1. Modelo Base para Auditoría (Idiom)
+# 1. Modelo Base para Auditoría (Idioma)
 class ModeloBase(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
