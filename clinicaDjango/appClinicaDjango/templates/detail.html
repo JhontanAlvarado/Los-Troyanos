@@ -2,7 +2,7 @@
 {% block titulo %}Detalle: {{ especialidad.nombre }}{% endblock %}
 {% block contenido %}
 <h1>{{ especialidad.nombre }}</h1>
-<p><strong>Teléfono:</strong> {{ especialidad.telefono }}</p>
+<p><italic><strong>Teléfono:</strong></italic> {{ especialidad.telefono }}</p>
 <br>
 <a href="{% url 'appClinicaDjango:index_doctores' especialidad.id %}">👨‍⚕️ Ver Doctores de esta Especialidad</a>
 {% endblock %}

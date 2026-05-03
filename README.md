@@ -22,6 +22,11 @@
 <img src="images/image.png" width="200">
 
 - Jhosselin Sthaicy Bustamante Escobar
+
+   Cel: 70775686
+
+   Gmail: sthaicy08@gmail.com
+
 - Jhonatan Alvarado Mamani
 
   Cel: 78304064
