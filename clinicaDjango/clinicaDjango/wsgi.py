@@ -1,5 +1,5 @@
 """
-WSGI config for clinicaDjango project.
+WSGI config for clinicaDjango project
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
