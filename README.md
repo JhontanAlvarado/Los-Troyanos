@@ -14,7 +14,13 @@
   Gmail: paraactividadescurriculates.777@gmail.com
 <img src="images/Dana.jpeg" width="200">
 
-- Andree Villca Torrico
+- Andre Fernando Villca Torrico
+
+  Cel: 78267040
+  
+  Gmail: 202401363@est.umss.edu
+<img src="images/image.png" width="200">
+
 - Jhosselin Sthaicy Bustamante Escobar
 - Jhonatan Alvarado Mamani
 
