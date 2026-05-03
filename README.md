@@ -15,12 +15,13 @@
 <img src="images/Dana.jpeg" width="200">
 
 - Andree Villca Torrico
+
 - Jhosselin Sthaicy Bustamante Escobar
 
    Cel: 70775686
 
    Gmail: sthaicy08@gmail.com
-   
+
 - Jhonatan Alvarado Mamani
 
   Cel: 78304064
