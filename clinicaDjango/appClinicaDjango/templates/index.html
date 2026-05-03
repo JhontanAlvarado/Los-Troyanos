@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block titulo %}Especialidades{% endblock %}
 {% block contenido %}
-<h1>Listado de Especialidades</h1>
+<h1> Listado de Especialidades </h1>
 <ul>
     {% for esp in especialidades %}
         <li><a href="{% url 'appClinicaDjango:show_especialidad' esp.id %}">{{ esp.nombre }}</a></li>

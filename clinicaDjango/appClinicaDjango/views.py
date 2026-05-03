@@ -43,3 +43,15 @@ def crear_cita(request):
         form = CitaForm()
 
     return render(request, 'crear_cita.html', {'form': form})
+
+#BÚSQUEDA DE DOCTORES
+def buscar_doctor(request):
+    query = request.GET.get('q', '').strip()
+    resultados = []
+    if query:
+        resultados = Doctor.objects.filter(nombre__icontains=query)
+    context = {
+        'query': query,
+        'resultados': resultados,
+    }
+    return render(request, 'busqueda.html', context)
